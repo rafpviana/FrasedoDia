@@ -8,21 +8,34 @@
     tools:context="com.example.rafaelpinheiro.frasedodia.MainActivity"
     android:background="@android:color/holo_orange_dark">
 
-    <Button
-        android:text="@string/texto_frase_dia"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Aperte o botão para mudar a frase"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:gravity="center"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/botaoNovaFraseId"
-        android:layout_margin="10dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/texto_frase_dia"
+        android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/textoNovaFraseId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/texto_nova_frase"
+        android:layout_margin="20dp"
         android:gravity="center"
+        android:textAlignment="viewStart"
         android:textColor="@android:color/background_light"
-        android:id="@+id/textoNovaFraseId"
-        android:layout_margin="10dp" />
+        android:textSize="@dimen/texto_nova_frase"
+        android:textStyle="bold" />
 </LinearLayout>
